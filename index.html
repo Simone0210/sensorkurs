@@ -20,6 +20,9 @@
 window.addEventListener('devicemotion',funktion(event){
                         var xacceleration= Math.round(event.acceleration.x*10)/10;
                         document.getElementById("accel-x").innerHTML= xacceleration;
+                        
+var xacceleration= Math.round(event.accelerationIncludingGravity.x*10)/10;
+                        document.getElementById("accel-x").innerHTML= xacceleration;
                         });
 
 </script>
